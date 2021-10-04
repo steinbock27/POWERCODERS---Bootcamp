@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    font-size: 1.6rem;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: lightblue;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+a {
+    color: black;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.5rem;
+    padding: 3rem 0;
+    text-decoration: none;
+}
+
+/* mobile version: off-canvas */
+@media screen and (max-width: 600px) {
+    nav {
+        height: 100%;
+        position: fixed;
+        right: -35rem;
+        width: 35rem;
+
+        transition: right 1s;
+    }
+    body > a:hover + nav {
+        right: 0;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    a {
+        font-size: 1.8rem;
+        padding: 1rem 4rem;
+    }
+}

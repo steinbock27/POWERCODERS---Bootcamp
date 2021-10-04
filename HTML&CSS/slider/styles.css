@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    height:100%;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+*,*::after,*::before {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+   position: fixed;
+   bottom: 10vh;
+   left: 45vw;
+}
+
+a+a{
+    left: 46vw;
+}
+
+a+a+a{
+    left: 47vw;
+}
+
+a+a+a+a{
+    left: 48vw;
+}
+a+a+a+a+a{
+    left: 49vw;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    height: 80vh;
+}
+
+li{
+    display: grid;
+    min-width: 100%;
+    background: khaki;
+    font-size: 80px;
+    place-items: center;
+}
+
+li:nth-of-type(even){
+    background: plum;
+}
