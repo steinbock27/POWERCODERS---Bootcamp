@@ -1,0 +1,36 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-row-gap: 10px;
+
+    min-height: 50%;
+}
+
+article:first-of-type{
+    background: gray;
+    margin-bottom: 10px;
+}
+
+article:last-of-type{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img{
+    object-fit: scale-down;
+    height: 70vh;
+
+}
