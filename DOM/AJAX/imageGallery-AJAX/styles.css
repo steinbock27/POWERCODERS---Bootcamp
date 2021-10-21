@@ -18,19 +18,3 @@ body{
 
     min-height: 50%;
 }
-
-article:first-of-type{
-    background: gray;
-    margin-bottom: 10px;
-}
-
-article:last-of-type{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-img{
-    object-fit: scale-down;
-    height: 70vh;
-
-}
