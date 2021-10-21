@@ -19,9 +19,5 @@ function addNext() {
   .then(data => li.textContent= data.title)
 
   container.appendChild(li);
-
-  
-
-  idNo.splice(0,1);
   
 }
