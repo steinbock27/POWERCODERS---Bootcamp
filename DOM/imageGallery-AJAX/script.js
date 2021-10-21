@@ -10,7 +10,10 @@ nextBtn.addEventListener('click',getNext);
 
 function getNext() {
 
-    console.log('load next image');
-
+    const urlAddress= 'https://api.thecatapi.com/v1/images/search';
+    //Cat image API
+    fetch(urlAddress)
+    .then(response => response.json())
+    .then(data => imgPlaceholder.src=data[0].url)
     
 }
